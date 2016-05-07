@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 [assembly: InternalsVisibleTo("UnitTests")]
-namespace CyrptoAssessment.Tests
+namespace CryptoAssessment.Tests
 {
     internal static partial class RandomnessTestUtil
     {

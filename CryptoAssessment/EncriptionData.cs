@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CyrptoAssessment
+namespace CryptoAssessment
 {
     /// <summary>
     ///     Class representing a plaintext, cyphertext pair, along with key and information

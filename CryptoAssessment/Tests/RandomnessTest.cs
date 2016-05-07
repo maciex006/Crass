@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CyrptoAssessment.Tests
+namespace CryptoAssessment.Tests
 {
     internal sealed class RandomnessTest : Test
     {
@@ -29,7 +29,7 @@ namespace CyrptoAssessment.Tests
                 counter++;
             }
             sw.Stop();
-            Result = new TestResult(this, Pairs.Count(), sw.Elapsed, result / counter);
+            //Result = new TestResult(this, Pairs.Count(), sw.Elapsed, result / counter);
         }
     }
 }

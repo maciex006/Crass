@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 
-namespace CyrptoAssessment.Generators
+namespace CryptoAssessment.Generators
 {
     internal sealed class EncriptionDataGenerator
     {
@@ -27,9 +27,9 @@ namespace CyrptoAssessment.Generators
 #endif
             List<Task<List<EncriptionData>>> tasks = new List<Task<List<EncriptionData>>>();
 
-            if ((tests & TestTypes.BitBalance) != 0)
+            if ((tests & (TestTypes.FrequencyTest | TestTypes.BlockFrequencyTest | TestTypes.RunsTest)) != 0)
             {
-                Task<List<EncriptionData>> task = new Task<List<EncriptionData>>(InvokeBitBalance);
+                Task<List<EncriptionData>> task = new Task<List<EncriptionData>>(InvokeFrequency);
                 tasks.Add(task);
                 task.Start();
             }
@@ -63,9 +63,9 @@ namespace CyrptoAssessment.Generators
             return tasks.SelectMany(task => task.Result);
         }
 
-        private List<EncriptionData> InvokeBitBalance()
+        private List<EncriptionData> InvokeFrequency()
         {
-            return RandomGenerator.Invoke(Configuration.BalanceGenPairs, m_Algorithm.Duplicate());
+            return RandomGenerator.Invoke(Configuration.FrequencyGenPairs, m_Algorithm.Duplicate());
         }
 
         private List<EncriptionData> InvokeNonlinearity()

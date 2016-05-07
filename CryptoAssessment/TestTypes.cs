@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CyrptoAssessment
+namespace CryptoAssessment
 {
     /// <summary>
     ///     Enumeration representing various types of tests.
@@ -14,10 +14,12 @@ namespace CyrptoAssessment
         None = 0,
         KeyLength = 1,
         Randomness = 2,
-        BitBalance = 4,
-        Nonlinearity = 8,
-        SacInput = 16,
-        SacKey = 32,
-        All = 63
+        Nonlinearity = 4,
+        SacInput = 8,
+        SacKey = 16,
+        FrequencyTest = 32,
+        BlockFrequencyTest = 64,
+        RunsTest = 128,
+        All = 255
     }
 }

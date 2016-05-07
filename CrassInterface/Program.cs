@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CyrptoAssessment;
-using CyrptoAssessment.Tests;
+using CryptoAssessment;
+using CryptoAssessment.Tests;
 using System.Security.Cryptography;
 
 namespace OutSideNamespace
@@ -14,7 +14,7 @@ namespace OutSideNamespace
         static void Main(string[] args)
         {
             Analizer desAnalizer = new Analizer(new DesEncriptor(8, 8));
-            desAnalizer.Run(TestTypes.All);
+            desAnalizer.Run(TestTypes.FrequencyTest | TestTypes.BlockFrequencyTest | TestTypes.RunsTest);
             desAnalizer.GetResults();
             //Console.WriteLine(RandomnessTestUtil.FrequencyTest(
             //    new byte[] { 201, 15, 218, 162, 33, 104, 194, 52, 196, 198, 98, 139, 128 }, 

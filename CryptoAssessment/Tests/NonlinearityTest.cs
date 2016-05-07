@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CyrptoAssessment.Tests
+namespace CryptoAssessment.Tests
 {
     internal sealed class NonlinearityTest : Test
     {
@@ -38,7 +38,7 @@ namespace CyrptoAssessment.Tests
             }
 
             sw.Stop();
-            Result = new TestResult(this, Pairs.Count(), sw.Elapsed, m_ResultTable.Max());
+            //Result = new TestResult(this, Pairs.Count(), sw.Elapsed, false, m_ResultTable.Max()); //TODO poprawić.
         }
 
         private void CalculateMetricForFixedKey(IGrouping<int?, EncriptionData> group)

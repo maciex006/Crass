@@ -4,9 +4,9 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CyrptoAssessment.Helpers;
+using CryptoAssessment.Helpers;
 
-namespace CyrptoAssessment.Generators
+namespace CryptoAssessment.Generators
 {
     internal static class SacGenerator
     {

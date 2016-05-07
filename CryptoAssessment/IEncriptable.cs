@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CyrptoAssessment
+namespace CryptoAssessment
 {
     /// <summary>
     ///     Interface representing functionality that must be provided by 

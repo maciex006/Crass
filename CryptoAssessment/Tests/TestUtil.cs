@@ -1,4 +1,4 @@
-﻿using CyrptoAssessment.Tests;
+﻿using CryptoAssessment.Tests;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CyrptoAssessment
+namespace CryptoAssessment
 {
     internal sealed class TestUtil
     {
@@ -19,19 +19,24 @@ namespace CyrptoAssessment
                 //Test bitBalanceTest = new BitBalanceTest(data.Where(x => (x.TestType & TestTypes.KeyLength) != 0));
             }
 
-            if ((tests & TestTypes.BitBalance) != 0)
-            {
-                initializedTests.Add(new BitBalanceTest(data.Where(x => (x.TestType & TestTypes.BitBalance) != 0)));
-            }
-
             if ((tests & TestTypes.Nonlinearity) != 0)
             {
                 initializedTests.Add(new NonlinearityTest(data.Where(x => (x.TestType & TestTypes.Nonlinearity) != 0)));
             }
 
-            if ((tests & TestTypes.Randomness) != 0)
+            if ((tests & TestTypes.RunsTest) != 0)
             {
-                initializedTests.Add(new RandomnessTest(data.Where(x => (x.TestType & TestTypes.BitBalance) != 0)));
+                initializedTests.Add(new RunsTest(data.Where(x => (x.TestType & TestTypes.FrequencyTest) != 0)));
+            }
+
+            if ((tests & TestTypes.FrequencyTest) != 0)
+            {
+                initializedTests.Add(new FrequencyTest(data.Where(x => (x.TestType & TestTypes.FrequencyTest) != 0)));
+            }
+
+            if ((tests & TestTypes.BlockFrequencyTest) != 0)
+            {
+                initializedTests.Add(new BlockFrequencyTest(data.Where(x => (x.TestType & TestTypes.FrequencyTest) != 0)));
             }
 
             if ((tests & TestTypes.SacInput) != 0)

@@ -51,13 +51,15 @@
     <Compile Include="IEncriptable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestResult.cs" />
-    <Compile Include="Tests\BitBalanceTest.cs" />
     <Compile Include="Tests\CyphertextOnly\FrequencyBlockTest.cs" />
     <Compile Include="Tests\CyphertextOnly\FrequencyTest.cs" />
     <Compile Include="Tests\CyphertextOnly\RunsTest.cs" />
+    <Compile Include="Tests\BlockFrequencyTest.cs" />
+    <Compile Include="Tests\FrequencyTest.cs" />
     <Compile Include="Tests\Helper\AdditionalFunctions.cs" />
     <Compile Include="Tests\NonlinearityTest.cs" />
     <Compile Include="Tests\RandomnessTest.cs" />
+    <Compile Include="Tests\RunsTest.cs" />
     <Compile Include="Tests\Test.cs" />
     <Compile Include="Tests\TestUtil.cs" />
     <Compile Include="TestTypes.cs" />

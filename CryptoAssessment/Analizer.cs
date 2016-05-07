@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CyrptoAssessment.Generators;
+using CryptoAssessment.Generators;
 using System.Runtime.CompilerServices;
-using CyrptoAssessment.Tests;
+using CryptoAssessment.Tests;
 
 [assembly: InternalsVisibleTo("UnitTests")]
-namespace CyrptoAssessment
+namespace CryptoAssessment
 {
     /// <summary>
     /// Class used for analizing cryptographic algorithm.

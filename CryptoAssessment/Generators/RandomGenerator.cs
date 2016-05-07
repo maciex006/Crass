@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Configuration;
 using System.Collections.Generic;
-using CyrptoAssessment.Helpers;
+using CryptoAssessment.Helpers;
 
-namespace CyrptoAssessment.Generators
+namespace CryptoAssessment.Generators
 {
     internal static class RandomGenerator
     {
