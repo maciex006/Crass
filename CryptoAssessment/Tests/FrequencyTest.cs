@@ -10,8 +10,8 @@ namespace CryptoAssessment.Tests
     internal sealed class FrequencyTest : Test
     {
         private double m_PValueThreshold = 0.05;
-        private string m_PassedComment = "";
-        private string m_FailedComment = "";
+        private string m_PassedComment = "Number of zeros and ones corresponds to the expected values";
+        private string m_FailedComment = "Too many zeros or ones";
 
         internal FrequencyTest(IEnumerable<EncriptionData> pairs)
         {

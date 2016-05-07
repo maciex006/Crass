@@ -22,8 +22,8 @@ namespace CryptoAssessment.Tests
         private double[] m_ChiSquareStat; //CHI
         private double[] m_GammaResult; // GAMMA
         private double m_PValueThreshold = 0.05;
-        private string m_PassedComment = "";
-        private string m_FailedComment = "";
+        private string m_PassedComment = "Sequence seems to have an expected distribution of zero-ones frequency.";
+        private string m_FailedComment = "Significant fluctuations of zero-ones frequency over the sequence length.";
 
         internal BlockFrequencyTest(IEnumerable<EncriptionData> pairs)
         {
